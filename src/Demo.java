@@ -28,9 +28,9 @@ public class Demo {
 //		two();
 //		three();
 		System.out.println("test");
-//		CompletableFuture<Void> completableFutureFather = CompletableFuture.allOf(completableFutureOne,
-//				completableFutureTwo, completableFutureThree);
-//		completableFutureFather.join();
+		CompletableFuture<Void> completableFutureFather = CompletableFuture.allOf(completableFutureOne,
+				completableFutureTwo, completableFutureThree);
+		completableFutureFather.join();
 		System.out.println("It's over?");
 		long estimatedTime = System.currentTimeMillis() - startTime;
 		System.out.println("Tiempo total " + estimatedTime);
